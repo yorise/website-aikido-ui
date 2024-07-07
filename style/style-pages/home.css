@@ -154,16 +154,13 @@ section.member h2 {
 section.member .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  justify-content: center;
+  gap: 2.5rem;
   padding: 2rem;
   box-sizing: border-box;
   width: 80%;
   margin: 3rem auto;
   background-color: rgba(255, 255, 255, 0.4);
-}
-
-section.member .gallery img {
-  flex: 1;
 }
 
 /* member section */
