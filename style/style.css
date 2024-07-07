@@ -1,0 +1,13 @@
+:root {
+  --font: #161720;
+  --active: #fbc707;
+}
+
+body {
+  background-color: rgba(30, 129, 199, 0.18);
+  font-family: "Poppins", "sans-serrif";
+}
+
+a {
+  text-decoration: none;
+}

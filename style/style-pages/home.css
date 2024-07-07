@@ -1,0 +1,138 @@
+section {
+  margin-bottom: 5rem;
+}
+
+section h1 {
+  color: var(--font);
+  font-size: 4rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/* hero section */
+
+section.hero {
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-image: url(./hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+section.hero::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100vh;
+}
+
+section.hero .content {
+  margin: 5rem;
+  width: 60%;
+  z-index: 2;
+}
+
+section.hero .content img.ui {
+  display: block;
+}
+
+section.hero .content span {
+  color: white;
+  font-size: 7rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+section.hero .content p {
+  text-align: justify;
+  width: 80%;
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 5rem;
+}
+
+section.hero .content a {
+  margin: auto;
+  color: var(--font);
+  background-color: var(--active);
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  border-radius: 0.8rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+section.hero .content a:hover {
+  background-color: var(--font);
+  color: var(--active);
+}
+
+/* hero section */
+
+/* about section */
+
+section.about .content {
+  position: relative;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  margin: 3rem;
+}
+
+section.about .content p {
+  width: 60%;
+  color: var(--font);
+  text-align: justify;
+  font-size: 1.5rem;
+}
+
+section.about .content .wrapper {
+  position: relative;
+  width: 80%;
+  max-width: 28.3rem;
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+section.about .content .wrapper .slider {
+  display: flex;
+  gap: 1rem;
+  transition: transform 0.5s ease-in-out;
+}
+
+section.about .content .wrapper .slider img {
+  width: 100%;
+}
+
+section.about .content .wrapper .preview {
+  position: absolute;
+  top: 45%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--active);
+  z-index: 2;
+  transition: background-color 0.3s;
+}
+
+section.about .content .wrapper .preview:hover {
+  background-color: rgb(160, 149, 31);
+  color: var(--active);
+}
+
+section.about .content .wrapper .preview.prev {
+  left: 0;
+}
+
+section.about .content .wrapper .preview.next {
+  right: 0;
+}
+
+/* about section */
