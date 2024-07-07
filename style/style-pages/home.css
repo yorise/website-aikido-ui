@@ -110,6 +110,7 @@ section.about .content .wrapper .slider {
 
 section.about .content .wrapper .slider img {
   width: 100%;
+  height: auto;
 }
 
 section.about .content .wrapper .preview {
@@ -136,3 +137,33 @@ section.about .content .wrapper .preview.next {
 }
 
 /* about section */
+
+/* member section */
+
+section.member h1 {
+  margin-bottom: 2rem;
+}
+
+section.member h2 {
+  color: var(--font);
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+section.member .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem;
+  box-sizing: border-box;
+  width: 80%;
+  margin: 3rem auto;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+section.member .gallery img {
+  flex: 1;
+}
+
+/* member section */
