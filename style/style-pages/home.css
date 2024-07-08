@@ -132,6 +132,10 @@ section.about .content .wrapper .preview.next {
   right: 0;
 }
 
+section.about .content span.read-more-btn {
+  display: none;
+}
+
 /* about section */
 
 /* member section */
@@ -207,6 +211,10 @@ section.member .gallery {
     font-size: 1.2rem;
   }
 
+  section.hero .content a {
+    font-size: 0.8rem;
+  }
+
   /* hero section */
 
   /* about section */
@@ -255,19 +263,28 @@ section.member .gallery {
 /* mobile */
 
 @media screen and (max-width: 500px) {
+  section h1 {
+    font-size: 1.8rem;
+    margin: 3rem;
+  }
+
   /* hero section */
 
   section.hero {
     background-position: -40rem;
   }
 
+  section.hero .content img.ui {
+    margin-bottom: 2rem;
+  }
+
   section.hero .content span {
-    font-size: 3rem;
-    line-height: 2;
+    font-size: 2.5rem;
+    letter-spacing: 0.2rem;
   }
 
   section.hero .content span img {
-    width: 2.5rem;
+    width: 2rem;
     height: auto;
   }
 
@@ -281,7 +298,7 @@ section.member .gallery {
 
   section.about .content .wrapper {
     max-width: 30rem;
-    margin: 3rem 0;
+    margin-bottom: 3rem;
   }
 
   section.about .content .wrapper .slider {
@@ -292,9 +309,34 @@ section.member .gallery {
     margin: 0;
   }
 
+  section.about .content p span.read-more {
+    display: block;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 2s ease, opacity 0.5s ease;
+  }
+
+  section.about .content p span.read-more.active {
+    max-height: 100rem; /* Adjust this value to the height of your text */
+    opacity: 1;
+  }
+
+  section.about .content span.read-more-btn {
+    display: block;
+    margin: 0.5rem 0;
+    color: blue;
+    font-size: 0.8rem;
+    z-index: 5;
+  }
+
   /* about section */
 
   /* member section */
+
+  section.member h2 {
+    font-size: 1.5rem;
+  }
 
   section.member .gallery img {
     width: 100%;
