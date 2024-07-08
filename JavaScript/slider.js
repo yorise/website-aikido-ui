@@ -6,7 +6,7 @@ const prev = document.querySelector(".prev");
 let index = 0;
 
 function showSlide(i) {
-  slider.style.transform = `translateX(${-i * 29.3}rem)`;
+  slider.style.transform = `translateX(${-i * 106}%)`;
 }
 
 next.addEventListener("click", () => {

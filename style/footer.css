@@ -29,6 +29,21 @@ footer .copyright {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem 0;
+  margin-top: 4rem;
   font-weight: 600;
 }
+
+/* tablet & mobile */
+
+@media screen and (max-width: 800px) {
+  footer .box {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  footer .box img.logo-tenkei-name {
+    width: 80%;
+  }
+}
+
+/* tablet & mobile */
