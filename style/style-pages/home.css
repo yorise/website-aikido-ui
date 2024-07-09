@@ -209,8 +209,8 @@ section.member .gallery {
   /* hero section */
 
   section.hero .content span img {
-    width: 85px;
-    height: 88px;
+    width: 5rem;
+    height: 5rem;
   }
 
   section.hero .content p {
@@ -275,8 +275,8 @@ section.member .gallery {
   }
 
   section.hero .content span img {
-    width: 4rem;
-    height: 4rem;
+    width: 3.8rem;
+    height: 3.8rem;
   }
 
   section.hero .content p {
@@ -385,7 +385,7 @@ section.member .gallery {
   }
 
   section.hero .content span img {
-    width: 2rem;
+    width: 1.8rem;
     height: auto;
   }
 
